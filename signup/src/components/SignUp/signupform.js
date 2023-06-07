@@ -25,12 +25,11 @@ function SignUpForm() {
     const message = signIn.password === signIn.confirmPassword ? "Successfully Signed Up." : "Passwords do not matched."
     const news = (signIn.newsletter) ? "Also, thank you for signing up for our newsletter." : ""
     e.preventDefault();
-    setSignIn((prevData) => {
-      return{
+    setSignIn(prevData => ({
         ...prevData,
         welcome: (message === "Passwords do not matched.") ? message: message+' '+news,
-      }
-    })
+      })
+    )
     // console.log(signIn.welcome)
     // console.log(signIn)
   }
@@ -87,7 +86,7 @@ function SignUpForm() {
                   control={<Checkbox />}
                   label="I want to Join the newsletter."
                   name="newsletter"
-                  value={signIn.newsletter}
+                  checked={signIn.newsletter}
                   onChange={handleChange}
                   />
               </FormControl>   
