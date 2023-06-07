@@ -5,10 +5,11 @@ import { useState } from 'react';
 
 function SignUpForm() {
   const [signIn, setSignIn] = useState({
+    welcome: 'Enter your credentials to Sign In.',
     username: '',
     password: '',
     confirmPassword: '',
-    remember: false,
+    newsletter: false,
   })
 
   function handleChange(e){
@@ -21,7 +22,16 @@ function SignUpForm() {
   }
 
   function handleSubmit(e){
+    const message = signIn.password === signIn.confirmPassword ? "Successfully Signed Up." : "Passwords do not matched."
+    const news = (signIn.newsletter) ? "Also, thank you for signing up for our newsletter." : ""
     e.preventDefault();
+    setSignIn((prevData) => {
+      return{
+        ...prevData,
+        welcome: message+' '+news,
+      }
+    })
+    console.log(signIn.welcome)
     console.log(signIn)
   }
 
@@ -29,7 +39,7 @@ function SignUpForm() {
     <div className='signin-screen'>
       <h1>Hi! Welcome. </h1>
       <div className='signin-notification'>
-        Enter your credentials to Sign In.
+        {signIn.welcome}
       </div>      
       <div className='sigin-form'>
         <form >
@@ -67,21 +77,20 @@ function SignUpForm() {
               id="outlined-password"
               label="Confirm Password"
               type="password"
-              name="confirmPassword"
-              
+              name="confirmPassword"              
               />
             </FormControl>
           </div>
-          <div className='signin-remember'>
-            <FormControl fullWidth>
-              <FormControlLabel
-                control={<Checkbox />}
-                label="Remember Me"
-                name="remember"
-                value={signIn.remember}
-                onChange={handleChange}
-                />
-            </FormControl>
+          <div className='signin-newsletter'>
+              <FormControl >
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="I want to Join the newsletter."
+                  name="newsletter"
+                  value={signIn.newsletter}
+                  onChange={handleChange}
+                  />
+              </FormControl>   
           </div>
           <div className='signin-button'>
             <FormControl fullWidth >

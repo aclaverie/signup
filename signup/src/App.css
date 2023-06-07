@@ -4,7 +4,7 @@
   margin-bottom: 12px;
   text-align: center;
   justify-content: center;
-  max-width: 40%;
+  max-width: 35%;
   
 }
 
@@ -20,28 +20,30 @@
   font-size: 20px;
   color: #FFFFFF;
 }
-.head-left, .head-right{  
+.head-left, .head-right{ 
+  border: 0px solid #FF0000; 
   padding: 12px;
   margin-left: 20px;
-  margin-right: 40px;
-  border: 0px solid #FF0000;
+  margin-right: 40px;  
   display: flex;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 .head-left{
+  border: 0px solid #FF0000;
   display: flex;
   text-align: left;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 600;
 }
 .App-title{
   margin: 10px;
 }
 .head-right{
+  border: 0px solid #FF0000;
   display: flex;
   text-align: right;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
 }
 
