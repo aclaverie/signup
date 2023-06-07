@@ -28,11 +28,11 @@ function SignUpForm() {
     setSignIn((prevData) => {
       return{
         ...prevData,
-        welcome: message+' '+news,
+        welcome: (message === "Passwords do not matched.") ? message: message+' '+news,
       }
     })
-    console.log(signIn.welcome)
-    console.log(signIn)
+    // console.log(signIn.welcome)
+    // console.log(signIn)
   }
 
   return (
