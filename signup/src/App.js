@@ -10,7 +10,7 @@ function App() {
       <div className="head-left">
           <div className="head-logo">
             <img src={ process.env.PUBLIC_URL + 'static/images/blue_apples_logo.png'}
-                  alt="Render Logo" width="200px" />
+                  alt="Render Logo" width="100px" />
           </div>
           <div className="App-title">
             

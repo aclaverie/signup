@@ -42,7 +42,6 @@ function SignUpForm() {
                 id="outlined-username"
                 label="Username"
                 name="username"
-                helperText="Enter Your Username"
               />
             </FormControl>
           </div>
@@ -55,8 +54,7 @@ function SignUpForm() {
               id="outlined-password"
               label="Password"
               type="password"
-              name="password" 
-              helperText="Enter Your Password"
+              name="password"
               />
             </FormControl>
           </div>
@@ -69,8 +67,8 @@ function SignUpForm() {
               id="outlined-password"
               label="Confirm Password"
               type="password"
-              name="confirmPassword" 
-              helperText="Confirm Your Password"
+              name="confirmPassword"
+              
               />
             </FormControl>
           </div>
