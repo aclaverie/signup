@@ -1,0 +1,105 @@
+.App {
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+  justify-content: center;
+  max-width: 40%;
+  
+}
+
+.App-header {
+  background-color: #0047af;
+  border: 0px solid #000000;
+  border-radius: 7px 7px 0px 0px;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.head-left, .head-right{  
+  padding: 12px;
+  margin-left: 20px;
+  margin-right: 40px;
+  border: 0px solid #FF0000;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.head-left{
+  display: flex;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+}
+.App-title{
+  margin: 10px;
+}
+.head-right{
+  display: flex;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container{
+  background-color: #E3F2FD;
+  border: 0px solid #000000;
+  color: #44378E;
+  min-height: 60vh;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.signin-screen{
+  width: 100%;
+
+}
+
+.signin-notification{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  border: 0px solid #000000;
+}
+
+.signin-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+  border: 5px solid #000000;
+}
+
+.signin-username, .signin-password, .signin-remember, .signin-button{
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+
+
+.App-footer{
+  background-color: #00dffc;
+  border: 0px solid #000000;
+  color: #FFFFFF;
+  min-height: 5vh;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0px 0px 7px 7px;
+}
+
+.footer-info{
+  display:flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: medium;
+}
